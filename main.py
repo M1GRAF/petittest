@@ -1,4 +1,10 @@
 import streamlit as st
+pages = st.sidebar.selectbox("Choisissez une page", ["Page 1", "Page 2"])
+if pages == "Page 1":
+    st.title("Page 1")
+elif pages == "Page 2":
+    st.title("Page 2")
+
 st.title("Bienvenue sur mon application moi Malika tchêpo")
 st.write("Je suis Malika tchêpo")
 age = st.slider("Quel est votre âge ?", 0, 100, 25)
